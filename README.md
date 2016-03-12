@@ -10,6 +10,7 @@ We're using [DataTables](https://github.com/DataTables/DataTables) to visualize
 the spreadsheet data and [TableTop](https://github.com/jsoma/tabletop) to
 feed the data into the website from the spreadsheet.
 
+HTML code is in the [gh-pages branch](https://github.com/mixxen/hawaii-public-library-serials-database/tree/gh-pages).
 
 Licensing
 =========
