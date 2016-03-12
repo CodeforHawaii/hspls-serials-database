@@ -1,4 +1,0 @@
-components/**/*
-node_modules
-.ruby-version
-s3_website.yml
