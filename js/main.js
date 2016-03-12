@@ -28,15 +28,6 @@ function writeTableWith(data, tabletop) {
         {'mDataProp': 'description', 'sTitle': 'Description', 'sClass': 'center'},
     ];
 
-    table = $("<table/></table>");
-    table.attr({
-        id: 'data-table-container',
-        cellpadding: 0,
-        cellspacing: 0,
-        border: 0,
-        class: "display table table-bordered table-striped"
-    });
-
     // Get all the data
     var all_data =
       (tabletop.simpleSheet) ?
@@ -50,9 +41,7 @@ function writeTableWith(data, tabletop) {
         return { name: linkedName, description: v.description };
     });
 
-    $("#data-container").replaceWith(table);
-
-    table.DataTable({
+    $("#data-table").DataTable({
         "paging": false,
         "aaData": all_data,
         "aoColumns": columns,
