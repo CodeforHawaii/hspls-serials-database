@@ -10,10 +10,10 @@ name <- serials %>%
   html_text() %>%
   trimws()
 
-des <- serials %>% 
+description <- serials %>% 
   html_nodes(".itemAll .desc .tips") %>%
   html_attr("title") %>%
   trimws()
 
-df = data.frame(name, url, des)
-write.table(df, file='db.csv', sep=",")
+df = data.frame(name, url, description)
+write.csv(df, file='db.csv', row.names=FALSE)
